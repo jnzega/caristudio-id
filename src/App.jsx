@@ -5,11 +5,9 @@ import HomePage from "./components/pages/HomePage/HomePage";
 import Login from "./components/pages/Login/Login";
 import Register from "./components/pages/Register/Register";
 
-
-
 const App = () => (
   <HelmetProvider>
-    <Router>
+    <Router basename="/caristudio-id">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
