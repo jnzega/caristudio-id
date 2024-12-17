@@ -1,0 +1,10 @@
+.carousel-inner {
+  aspect-ratio: 21 / 9; /* Menjaga aspek rasio */
+}
+
+/* Pastikan gambar mengisi seluruh area carousel */
+img {
+  object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+  height: 100%;
+  width: 100%;
+}
