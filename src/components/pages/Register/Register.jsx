@@ -87,7 +87,7 @@ const Register = () => {
 
           <div className="login-link">
             <p>
-              Sudah punya akun? <a href="/login">Masuk!</a>
+              Sudah punya akun? <a href="/#/login">Masuk!</a>
             </p>
           </div>
         </div>

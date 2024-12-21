@@ -48,8 +48,8 @@ const Header = () => {
               <a onClick={handleLogout} href='/' className="register">Logout</a>
             ) : (
               <>
-                <a href='/login' className="login">Masuk</a>
-                <a href='/register' className="register">Daftar</a>
+                <a href='/#/login' className="login">Masuk</a>
+                <a href='/#/register' className="register">Daftar</a>
               </>
             )
             }

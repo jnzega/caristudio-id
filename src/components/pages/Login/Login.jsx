@@ -63,7 +63,7 @@ const Login = () => {
 
           <div className="signup-link">
             <p>
-              Belum punya akun? <a href="/register">Daftar di sini!</a>
+              Belum punya akun? <a href="/#/register">Daftar di sini!</a>
             </p>
           </div>
         </div>

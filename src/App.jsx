@@ -60,7 +60,7 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<ProtectedRoute redirectIfLoggedIn={true}><Login /></ProtectedRoute>} />
           <Route path="/register" element={<ProtectedRoute redirectIfLoggedIn={true}><Register /></ProtectedRoute>} />
-          <Route path="*" element={<Navigate to="/" />} />
+          <Route path="*" element={<Navigate to="/#/" />} />
         </Routes>
       </Router>
     </HelmetProvider>
