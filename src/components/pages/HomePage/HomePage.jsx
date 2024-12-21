@@ -6,6 +6,7 @@ import HomeCarousel from '../../HomeCarousel/HomeCarousel';
 import Filter from '../../Filter/Filter';
 import Studio from '../../Studio/Studio';
 import Faq from '../../Faq/Faq';
+import Footer from '../../Footer/Footer';
 
 const HomePage = () => {
   const [filters, setFilters] = useState({
@@ -26,6 +27,7 @@ const HomePage = () => {
       <Filter filters={filters} setFilters={setFilters} setDateRange={setDateRange} />
       <Studio filters={filters} dateRange={dateRange} />
       <Faq />
+      <Footer />
     </>
   );
 };

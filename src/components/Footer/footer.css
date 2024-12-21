@@ -1,0 +1,106 @@
+.footer {
+  width: 100%;
+  height: 275px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.footer-container {
+  height: 75%;
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+
+.right-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-footer .footer-logo {
+  color: white;
+  font-family: 'Tsukimi Rounded', sans-serif;
+  font-size: 64px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.right-footer .contacts {
+  display: flex;
+  column-gap: 25px;
+}
+
+.right-footer .contacts p.title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 100;
+  color: white;
+}
+
+.right-footer .contacts p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 300;
+  color: white;
+}
+
+.left-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-footer .footer-information {
+  font-size: 24px;
+  color: white;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.left-footer .footer-btns {
+  display: flex;
+  column-gap: 8px;
+}
+
+.left-footer .footer-btns .btn-info, 
+.left-footer .footer-btns .btn-corp {
+  background-color: black;
+  display: flex;
+  height: 24px;
+  width: 121px;
+  border: 1pt solid white;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-footer .footer-btns .btn-info a, 
+.left-footer .footer-btns .btn-corp a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 9px;
+}
+
+.copyright-footer {
+  height: 25%;
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright-footer p {
+  margin: 0;
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+}
