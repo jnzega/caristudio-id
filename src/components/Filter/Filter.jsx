@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import './Filter.css';
 
-const Filter = () => {
+const Filter = ({ filters, setFilters }) => {
   // State untuk dropdown "jenis studio"
   const [isOpenStudio, setIsOpenStudio] = useState(false);
-  const [selectedStudio, setSelectedStudio] = useState("Pilih jenis studio");
-  const studioOptions = ["Photostudio", "Photobooth", "Photobox", "Jasa Photography"];
+  const [selectedStudio, setSelectedStudio] = useState(filters.jenisStudio || "Pilih jenis studio");
+  const studioOptions = ["Photostudio", "Photobooth", "Photobox", "Photographer"];
 
   // State untuk dropdown "lokasi studio" pertama
   const [isOpenLocation1, setIsOpenLocation1] = useState(false);
-  const [selectedLocation1, setSelectedLocation1] = useState("Pilih lokasi studio");
+  const [selectedLocation1, setSelectedLocation1] = useState(filters.lokasiStudio || "Pilih lokasi studio");
   const locationOptions = ["Jakarta", "Bogor", "Depok", "Tangerang"];
 
   // State untuk Date Range Picker
@@ -25,7 +25,7 @@ const Filter = () => {
   // Fungsi untuk format tanggal lokal
   const formatDate = (dateObj) => {
     if (!dateObj) return '';
-    return dateObj.toLocaleDateString('id-ID', { day:'numeric', month:'short', year:'numeric' });
+    return dateObj.toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' });
   };
 
   // Fungsi untuk menghitung susunan tanggal dalam bulan tertentu
@@ -33,7 +33,7 @@ const Filter = () => {
     // Dapatkan hari pertama bulan ini (Sunday-based index: 0=Min,1=Sen,...)
     const firstDayOfMonth = new Date(year, month, 1);
     const dayOfWeek = firstDayOfMonth.getDay(); // 0=Min,1=Sen,...,6=Sab
-    const daysInMonth = new Date(year, month+1, 0).getDate();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
 
     // Kita ingin Senin sebagai hari pertama
     // Sunday-based: Min=0, Sen=1, Sel=2, Rab=3, Kam=4, Jum=5, Sab=6
@@ -45,7 +45,7 @@ const Filter = () => {
 
     const weeks = [];
     let currentDay = 1 - startIndex; // start dengan bilangan negatif atau 1
-    
+
     // Kita buat 6 baris untuk memastikan semua tanggal tertampung
     for (let week = 0; week < 6; week++) {
       const weekDays = [];
@@ -90,7 +90,7 @@ const Filter = () => {
     setCurrentMonth(newMonth);
   };
 
-  const monthNames = ['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'];
+  const monthNames = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
 
   const handleDayClick = (day) => {
     if (!day) return; // Klik di hari null (diluar bulan ini) diabaikan
@@ -112,8 +112,8 @@ const Filter = () => {
 
           {/* Dropdown Jenis Studio */}
           <div className="filter-dropdown">
-            <div 
-              className="select" 
+            <div
+              className="select"
               onClick={() => setIsOpenStudio(!isOpenStudio)}
             >
               <span className="selected">{selectedStudio}</span>
@@ -123,11 +123,12 @@ const Filter = () => {
             </div>
             <ul className={`menu ${isOpenStudio ? 'menu-open' : ''}`}>
               {studioOptions.map((option) => (
-                <li 
-                  key={option} 
-                  className={option === selectedStudio ? 'active' : ''} 
+                <li
+                  key={option}
+                  className={option === selectedStudio ? 'active' : ''}
                   onClick={() => {
                     setSelectedStudio(option);
+                    setFilters({ ...filters, jenisStudio: option });
                     setIsOpenStudio(false);
                   }}
                 >
@@ -139,8 +140,8 @@ const Filter = () => {
 
           {/* Dropdown Lokasi Studio 1 */}
           <div className="filter-dropdown">
-            <div 
-              className="select" 
+            <div
+              className="select"
               onClick={() => setIsOpenLocation1(!isOpenLocation1)}
             >
               <span className="selected">{selectedLocation1}</span>
@@ -150,11 +151,12 @@ const Filter = () => {
             </div>
             <ul className={`menu ${isOpenLocation1 ? 'menu-open' : ''}`}>
               {locationOptions.map((option) => (
-                <li 
+                <li
                   key={option}
-                  className={option === selectedLocation1 ? 'active' : ''} 
+                  className={option === selectedLocation1 ? 'active' : ''}
                   onClick={() => {
                     setSelectedLocation1(option);
+                    setFilters({ ...filters, lokasiStudio: option });
                     setIsOpenLocation1(false);
                   }}
                 >
@@ -166,8 +168,8 @@ const Filter = () => {
 
           {/* Date Range Picker (menggantikan dropdown Lokasi Studio 2) */}
           <div className="filter-dropdown">
-            <div 
-              className="select" 
+            <div
+              className="select"
               onClick={() => {
                 setIsDatePickerOpen(!isDatePickerOpen);
                 if (!isDatePickerOpen) {
@@ -177,8 +179,8 @@ const Filter = () => {
               }}
             >
               <span className="selected">
-                {selectedStartDate && selectedEndDate 
-                  ? `Dari: ${formatDate(selectedStartDate)} - Hingga: ${formatDate(selectedEndDate)}` 
+                {selectedStartDate && selectedEndDate
+                  ? `Dari: ${formatDate(selectedStartDate)} - Hingga: ${formatDate(selectedEndDate)}`
                   : "Pilih Tanggal"
                 }
               </span>
@@ -190,13 +192,13 @@ const Filter = () => {
             {isDatePickerOpen && (
               <div className="calendar-container menu menu-open">
                 <div className="calendar-tabs">
-                  <div 
+                  <div
                     className={`calendar-tab ${activeTab === 'start' ? 'active-tab' : ''}`}
                     onClick={() => setActiveTab('start')}
                   >
                     Tanggal Awal
                   </div>
-                  <div 
+                  <div
                     className={`calendar-tab ${activeTab === 'end' ? 'active-tab' : ''}`}
                     onClick={() => setActiveTab('end')}
                   >
@@ -221,8 +223,8 @@ const Filter = () => {
                   {calendarWeeks.map((week, i) => (
                     <div className="calendar-week" key={i}>
                       {week.map((day, idx) => (
-                        <div 
-                          className="calendar-day" 
+                        <div
+                          className="calendar-day"
                           key={idx}
                           onClick={() => handleDayClick(day)}
                         >
