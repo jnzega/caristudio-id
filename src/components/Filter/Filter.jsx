@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Filter.css';
 
-const Filter = ({ filters, setFilters }) => {
+const Filter = ({ filters, setFilters, setDateRange }) => {
+
   // State untuk dropdown "jenis studio"
   const [isOpenStudio, setIsOpenStudio] = useState(false);
   const [selectedStudio, setSelectedStudio] = useState(filters.jenisStudio || "Pilih jenis studio");
@@ -102,6 +103,13 @@ const Filter = ({ filters, setFilters }) => {
       setIsDatePickerOpen(false); // Tutup setelah pilih end
     }
   };
+
+  // Secara otomatis panggil `setDateRange` saat tanggal selesai dipilih
+  useEffect(() => {
+    if (selectedStartDate && selectedEndDate) {
+      setDateRange({ tanggalMulai: selectedStartDate, tanggalSelesai: selectedEndDate });
+    }
+  }, [selectedStartDate, selectedEndDate, setDateRange]);
 
   return (
     <div className="filter">
@@ -234,6 +242,7 @@ const Filter = ({ filters, setFilters }) => {
                     </div>
                   ))}
                 </div>
+                
               </div>
             )}
           </div>

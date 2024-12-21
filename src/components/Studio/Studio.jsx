@@ -6,7 +6,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const Studio = ({ filters }) => {
+const Studio = ({ filters, dateRange }) => {
   const settings = {
     dots: true,
     infinite: false,
@@ -38,6 +38,7 @@ const Studio = ({ filters }) => {
               jasaStudio={data.jasaStudio}
               hargaStudio={data.hargaStudio}
               thumbnail={data.thumbnail}
+              dateRange={dateRange}
             />
           ))}
         </Slider>

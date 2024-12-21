@@ -5,12 +5,15 @@ import { Helmet } from "react-helmet-async";
 import HomeCarousel from '../../HomeCarousel/HomeCarousel';
 import Filter from '../../Filter/Filter';
 import Studio from '../../Studio/Studio';
+import Faq from '../../Faq/Faq';
 
 const HomePage = () => {
   const [filters, setFilters] = useState({
     jenisStudio: null,
     lokasiStudio: null,
   });
+
+  const [dateRange, setDateRange] = useState({ tanggalMulai: null, tanggalSelesai: null });
 
   return (
     <>
@@ -20,9 +23,9 @@ const HomePage = () => {
       <Header />
       <HomeCarousel />
       {/* Kirim state filter ke Filter dan Studio */}
-      <Filter filters={filters} setFilters={setFilters} />
-      <Studio filters={filters} />
-      <div className="body-web">test</div>
+      <Filter filters={filters} setFilters={setFilters} setDateRange={setDateRange} />
+      <Studio filters={filters} dateRange={dateRange} />
+      <Faq />
     </>
   );
 };
