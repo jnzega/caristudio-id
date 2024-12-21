@@ -1,6 +1,5 @@
 import React from 'react';
 import './studiocards.css';
-import Thumbnail1 from "../../assets/img/thumbnail/studio-1.png";
 
 const Studiocards = ({ namaStudio, lokasiStudio, ketersediaanStudio, jasaStudio, hargaStudio, thumbnail }) => {
   return (

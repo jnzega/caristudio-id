@@ -1,4 +1,23 @@
 import Thumbnail1 from "../assets/img/thumbnail/studio-1.png";
+import Thumbnail2 from "../assets/img/thumbnail/studio-2.png";
+import Thumbnail3 from "../assets/img/thumbnail/studio-3.png";
+import Thumbnail4 from "../assets/img/thumbnail/studio-4.png";
+import Thumbnail5 from "../assets/img/thumbnail/studio-5.png";
+import Thumbnail6 from "../assets/img/thumbnail/studio-6.png";
+import Thumbnail7 from "../assets/img/thumbnail/studio-7.png";
+import Thumbnail8 from "../assets/img/thumbnail/studio-8.png";
+import Thumbnail9 from "../assets/img/thumbnail/studio-9.png";
+import Thumbnail10 from "../assets/img/thumbnail/studio-10.png";
+import Thumbnail11 from "../assets/img/thumbnail/studio-11.png";
+import Thumbnail12 from "../assets/img/thumbnail/studio-12.png";
+import Thumbnail13 from "../assets/img/thumbnail/studio-13.png";
+import Thumbnail14 from "../assets/img/thumbnail/studio-14.png";
+import Thumbnail15 from "../assets/img/thumbnail/studio-15.png";
+import Thumbnail16 from "../assets/img/thumbnail/studio-16.png";
+import Thumbnail17 from "../assets/img/thumbnail/studio-17.png";
+import Thumbnail18 from "../assets/img/thumbnail/studio-18.png";
+import Thumbnail19 from "../assets/img/thumbnail/studio-19.png";
+import Thumbnail20 from "../assets/img/thumbnail/studio-20.png";
 
 const dummyData = [
   {
@@ -17,7 +36,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photostudio", "Photographer", "Costume Rent"],
     hargaStudio: 300000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail2, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 3,
@@ -26,7 +45,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photostudio", "Tools & Gear Rent", "Make Up Artist"],
     hargaStudio: 1000000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail3, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 4,
@@ -35,7 +54,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photostudio", "Small Studio", "Medium Studio"],
     hargaStudio: 300000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail4, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 5,
@@ -44,7 +63,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photostudio", "Photographer"],
     hargaStudio: 1500000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail5, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 6,
@@ -53,7 +72,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photostudio", "Photographer", "Photoprint"],
     hargaStudio: 1500000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail6, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 7,
@@ -62,7 +81,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photostudio", "Photographer", "Photobooth"],
     hargaStudio: 350000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail7, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 8,
@@ -71,7 +90,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photostudio", "Photographer", "Photobook"],
     hargaStudio: 500000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail8, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 9,
@@ -80,7 +99,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photobooth", "Matrix 180 & 360"],
     hargaStudio: 2000000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail9, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 10,
@@ -89,7 +108,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photobooth", "Photostudio"],
     hargaStudio: 120000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail10, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 11,
@@ -98,7 +117,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photobooth", "Videobooth", "Framebox"],
     hargaStudio: 250000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail11, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 12,
@@ -107,7 +126,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photobox", "Photostrip"],
     hargaStudio: 25000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail12, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 13,
@@ -116,7 +135,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photobox", "Photostrip", "Dll."],
     hargaStudio: 10000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail13, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 14,
@@ -125,7 +144,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photobooth", "Photostrip", "Dll."],
     hargaStudio: 50000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail14, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 15,
@@ -134,7 +153,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photostudio", "Photobox"],
     hargaStudio: 150000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail15, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 16,
@@ -143,7 +162,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photostudio", "Photobox", "Photobooth"],
     hargaStudio: 150000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail16, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 17,
@@ -152,7 +171,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photostudio", "Wedding Photograph", "Photographer"],
     hargaStudio: 13000000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail17, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 18,
@@ -161,7 +180,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photostudio", "Wedding Photograph", "Photographer"],
     hargaStudio: 2500000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail18, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 19,
@@ -170,7 +189,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photostudio", "Wedding Photograph", "Photographer"],
     hargaStudio: 2500000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail19, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 20,
@@ -179,7 +198,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photostudio", "Wedding Photograph", "Photographer"],
     hargaStudio: 2500000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail20, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 21,
@@ -197,7 +216,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photostudio", "Photographer", "Costume Rent"],
     hargaStudio: 300000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail2, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 23,
@@ -206,7 +225,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photostudio", "Tools & Gear Rent", "Make Up Artist"],
     hargaStudio: 1000000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail3, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 24,
@@ -215,7 +234,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photostudio", "Small Studio", "Medium Studio"],
     hargaStudio: 300000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail4, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 25,
@@ -224,7 +243,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photostudio", "Photographer"],
     hargaStudio: 1500000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail5, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 26,
@@ -233,7 +252,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photostudio", "Photographer", "Photoprint"],
     hargaStudio: 1500000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail6, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 27,
@@ -242,7 +261,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photostudio", "Photographer", "Photobooth"],
     hargaStudio: 350000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail7, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 28,
@@ -251,7 +270,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photostudio", "Photographer", "Photobook"],
     hargaStudio: 500000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail8, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 29,
@@ -260,7 +279,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photobooth", "Matrix 180 & 360"],
     hargaStudio: 2000000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail9, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 30,
@@ -269,7 +288,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photobooth", "Photostudio"],
     hargaStudio: 120000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail10, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 31,
@@ -278,7 +297,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photobooth", "Videobooth", "Framebox"],
     hargaStudio: 250000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail11, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 32,
@@ -287,7 +306,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photobox", "Photostrip"],
     hargaStudio: 25000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail12, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 33,
@@ -296,7 +315,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photobox", "Photostrip", "Dll."],
     hargaStudio: 10000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail13, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 34,
@@ -305,7 +324,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photobooth", "Photostrip", "Dll."],
     hargaStudio: 50000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail14, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 35,
@@ -314,7 +333,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photostudio", "Photobox"],
     hargaStudio: 150000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail15, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 36,
@@ -323,7 +342,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photostudio", "Photobox", "Photobooth"],
     hargaStudio: 150000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail16, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 37,
@@ -332,7 +351,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photostudio", "Wedding Photograph", "Photographer"],
     hargaStudio: 13000000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail17, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 38,
@@ -341,7 +360,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photostudio", "Wedding Photograph", "Photographer"],
     hargaStudio: 2500000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail18, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 39,
@@ -350,7 +369,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photostudio", "Wedding Photograph", "Photographer"],
     hargaStudio: 2500000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail19, // Ganti dengan URL gambar nyata
   },
   {
     idStudio: 30,
@@ -359,7 +378,7 @@ const dummyData = [
     ketersediaanStudio: "Tersedia",
     jasaStudio: ["Photostudio", "Wedding Photograph", "Photographer"],
     hargaStudio: 2500000,
-    thumbnail: Thumbnail1, // Ganti dengan URL gambar nyata
+    thumbnail: Thumbnail20, // Ganti dengan URL gambar nyata
   },
 ];
 
