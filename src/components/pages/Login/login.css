@@ -1,0 +1,110 @@
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card{
+  width: 344px;
+  height: 350px;
+  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
+
+.logo-login {
+  text-decoration: none;
+  color: black;
+  font-family: "Tsukimi Rounded", sans-serif;
+  font-weight: 500;
+  font-size: 26.66px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.description-login {
+  color: #BFBFBF;
+  font-size: 10px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  
+}
+
+.login-card-header {
+  width: 100%;
+  display: grid;
+  height: max-content;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.form-login {
+  width: 100%;
+  height: 100%;
+
+}
+
+.form-group {
+  font-size: 12px;
+  display: grid;
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: 400;
+  color: black;
+}
+
+.form-group input {
+  height: 35px;
+  font-weight: 300;
+  color: #bfbfbf;
+  caret-color: #bfbfbf;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #BFBFBF;
+  outline: none;
+}
+
+.form-group input::placeholder {
+  font-size: 12px;
+  font-weight: 200;
+  color: #bfbfbf;
+}
+
+
+.login-submit {
+  width: 100%;
+  background-color: #000;
+  color: #FFF;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  height: 30px;
+}
+
+.signup-link {
+  font-size: 10px;
+  margin: 0;
+}
+
+.signup-link p {
+  margin: 0;
+  color: black;
+}
+
+.signup-link p a{
+  color: black;
+}
