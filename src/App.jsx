@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import HomePage from "./components/pages/HomePage/HomePage";
 import Login from "./components/pages/Login/Login";
 import Register from "./components/pages/Register/Register";
+import ProtectedRoute from './components/ProtectedRoute';
 
 const App = () => {
   const [isDesktop, setIsDesktop] = useState(true);
@@ -57,8 +58,9 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<ProtectedRoute redirectIfLoggedIn={true}><Login /></ProtectedRoute>} />
+          <Route path="/register" element={<ProtectedRoute redirectIfLoggedIn={true}><Register /></ProtectedRoute>} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Router>
     </HelmetProvider>
