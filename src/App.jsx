@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import HomePage from "./components/pages/HomePage/HomePage";
 import Login from "./components/pages/Login/Login";
