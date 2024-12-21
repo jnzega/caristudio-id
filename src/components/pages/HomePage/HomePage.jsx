@@ -4,6 +4,7 @@ import "./HomePage.css";
 import { Helmet } from "react-helmet-async";
 import HomeCarousel from '../../HomeCarousel/HomeCarousel';
 import Filter from '../../Filter/Filter';
+import Studio from '../../Studio/Studio';
 
 const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
       <Header />
       <HomeCarousel />
       <Filter />
+      <Studio />
       <div className="body-web">test</div>
     </>
   )
