@@ -81,3 +81,134 @@ button.order-now {
   font-weight: 400;
   height: 20px;
 }
+
+/* Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup Content */
+.popup-content {
+  width: max-content;
+  height: max-content;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.popup-content h2 {
+  margin-bottom: 20px;
+}
+
+.popup-content button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-content button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling untuk tabel */
+.order-table {
+  border-collapse: separate; /* Memungkinkan jarak antar garis */
+  border-spacing: 0; /* Hilangkan spasi default */
+  width: 100%; /* Tabel memenuhi lebar container */
+  margin: 20px 0; /* Jarak atas-bawah tabel */
+  font-size: 16px; /* Ukuran font */
+  font-family: Arial, sans-serif; /* Font tabel */
+  text-align: center; /* Teks rata tengah */
+  border-radius: 10px; /* Border radius untuk tabel */
+  overflow: hidden; /* Agar radius berfungsi */
+  background-color: #f9f9f9; /* Warna latar tabel */
+}
+
+/* Styling untuk thead */
+.order-table thead {
+  background-color: #000; /* Warna latar hitam */
+  color: white; /* Warna teks putih */
+  font-weight: bold; /* Huruf tebal */
+}
+
+.order-table thead th {
+  padding: 15px; /* Padding dalam header */
+  border-bottom: 2px solid #ddd; /* Garis bawah header */
+}
+
+/* Styling untuk baris tabel */
+.order-table tbody tr {
+  border-bottom: 1px solid #ddd; /* Garis pemisah antar baris */
+}
+
+.order-table tbody tr:hover {
+  background-color: #f1f1f1; /* Warna saat disentuh */
+}
+
+/* Styling untuk setiap sel */
+.order-table td, .order-table th {
+  padding: 12px; /* Padding dalam sel */
+  border-right: 1px solid #ddd; /* Garis pemisah antar kolom */
+}
+
+/* Hapus garis pemisah terakhir */
+.order-table tbody tr td:last-child,
+.order-table thead th:last-child {
+  border-right: none; /* Hilangkan garis pada kolom terakhir */
+}
+
+/* Styling untuk tombol */
+.button-delete {
+  background-color: #000; /* Warna latar hitam */
+  color: white; /* Warna teks putih */
+  border: none; /* Hilangkan border default */
+  padding: 10px 20px; /* Padding tombol */
+  cursor: pointer; /* Pointer saat disentuh */
+  border-radius: 10px; /* Border radius tombol */
+  font-size: 14px; /* Ukuran font tombol */
+  transition: background-color 0.3s ease; /* Efek transisi */
+}
+
+.button-delete:hover {
+  background-color: #444; /* Warna saat tombol disentuh */
+}
+
+.popup-content button {
+  background-color: #000; /* Tombol 'Tutup' juga berwarna hitam */
+  color: white; /* Warna teks putih */
+  border: none; /* Hilangkan border */
+  padding: 10px 20px; /* Padding tombol */
+  cursor: pointer; /* Pointer saat disentuh */
+  border-radius: 10px; /* Border radius tombol */
+  font-size: 14px; /* Ukuran font tombol */
+  transition: background-color 0.3s ease; /* Efek transisi */
+}
+
+.popup-content button:hover {
+  background-color: #444; /* Warna saat disentuh */
+}
+
+/* Styling untuk teks kosong */
+.order-table p {
+  color: #666; /* Warna teks abu-abu */
+  font-size: 14px; /* Ukuran font kecil */
+  text-align: center; /* Teks rata tengah */
+  margin: 10px 0; /* Jarak atas-bawah teks */
+}
